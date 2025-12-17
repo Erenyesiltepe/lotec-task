@@ -1,0 +1,5 @@
+
+# Ignore client artifacts
+/node_modules/
+dist/
+

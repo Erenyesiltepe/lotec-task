@@ -1,2 +1,7 @@
 # Keep only server-local ignores here (root .gitignore handles common patterns)
 .vscode/
+.env
+
+node_modules/
+dist/
+prisma/prisma/dev.db

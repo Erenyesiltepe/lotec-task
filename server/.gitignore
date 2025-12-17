@@ -1,0 +1,2 @@
+# Keep only server-local ignores here (root .gitignore handles common patterns)
+.vscode/

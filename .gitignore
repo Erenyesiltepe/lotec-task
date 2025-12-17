@@ -1,0 +1,12 @@
+# Ignore server artifacts
+/server/node_modules/
+/server/dist/
+/server/prisma/prisma/dev.db
+
+# Ignore local env files
+/.env
+
+# Ignore client artifacts
+/client/node_modules/
+/client/dist/
+

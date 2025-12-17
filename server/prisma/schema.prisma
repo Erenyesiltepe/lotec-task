@@ -5,12 +5,14 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url      = "file:./prisma/dev.db"
 }
 
-model User {
+model Task {
   id        Int      @id @default(autoincrement())
-  email     String   @unique
-  name      String?
+  title     String
+  assignee  String   @default("Unknown")
+  completed Boolean  @default(false)
   createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
 }
